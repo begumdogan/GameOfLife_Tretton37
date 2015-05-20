@@ -71,10 +71,10 @@ namespace GameOfLife_Tretton37
         }
         private void generationTick_Tick(object sender, EventArgs e)
         {
-            generationTick.Stop();
+            //generationTick.Stop(); - not necessary in tick
             if (CountPopulation() == 0)
             {
-                generationTick.Stop();
+                //generationTick.Stop(); - not necessary in tick
                 btnStartGen.Enabled = true;
             }
             else
